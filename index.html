@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHEI4U | Portofolio Rahmatul Sasi Maulida</title>
+  <meta name="description" content="Portofolio pribadi Rahmatul Sasi Maulida, siswi X RPL B SMK Negeri 4 Malang. Web development, skills, proyek, dan kontak." />
+  <link rel="stylesheet" href="sasi.css" />
+  <script src="sasi.js" defer></script>
+</head>
+
+<body>
+  <svg class="sprite" aria-hidden="true">
+    <defs>
+      <linearGradient id="petalColor" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ffd1dc" />
+        <stop offset="55%" stop-color="#ff8fb1" />
+        <stop offset="100%" stop-color="#ff4f8b" />
+      </linearGradient>
+
+      <symbol id="petal" viewBox="0 0 40 50">
+        <path d="M20 48 C6 40 0 22 6 8 C9 3 15 2 20 9 C25 2 31 3 34 8 C40 22 34 40 20 48 Z" fill="url(#petalColor)" />
+        <path d="M20 46 C19 34 19 22 20 12" stroke="#fff" stroke-opacity=".35" stroke-width="1" fill="none" />
+      </symbol>
+
+      <symbol id="blossom" viewBox="0 0 100 100">
+        <g fill="url(#petalColor)">
+          <path d="M50 50 C36 36 36 14 44 6 C47 3 49 5 50 10 C51 5 53 3 56 6 C64 14 64 36 50 50 Z" />
+          <path d="M50 50 C36 36 36 14 44 6 C47 3 49 5 50 10 C51 5 53 3 56 6 C64 14 64 36 50 50 Z" transform="rotate(72 50 50)" />
+          <path d="M50 50 C36 36 36 14 44 6 C47 3 49 5 50 10 C51 5 53 3 56 6 C64 14 64 36 50 50 Z" transform="rotate(144 50 50)" />
+          <path d="M50 50 C36 36 36 14 44 6 C47 3 49 5 50 10 C51 5 53 3 56 6 C64 14 64 36 50 50 Z" transform="rotate(216 50 50)" />
+          <path d="M50 50 C36 36 36 14 44 6 C47 3 49 5 50 10 C51 5 53 3 56 6 C64 14 64 36 50 50 Z" transform="rotate(288 50 50)" />
+        </g>
+        <circle cx="50" cy="50" r="7" fill="#fff" opacity=".9" />
+        <circle cx="50" cy="50" r="3.5" fill="#e0306f" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="petals petals-back" aria-hidden="true"></div>
+  <div class="petals petals-front" aria-hidden="true"></div>
+
+  <div class="bg-lily" aria-hidden="true">
+    <svg viewBox="0 0 600 600" fill="none" stroke="#dc143c" stroke-width="1.1">
+      <g transform="translate(300 300)">
+        <path d="M0 20 C-35 95 -130 150 -220 165 C-130 125 -65 78 -12 12" />
+        <path d="M0 20 C35 95 130 150 220 165 C130 125 65 78 12 12" />
+        <path d="M0 20 C-75 45 -170 45 -250 12 C-165 10 -80 0 -12 0" />
+        <path d="M0 20 C75 45 170 45 250 12 C165 10 80 0 12 0" />
+        <path d="M0 20 C-22 -48 -90 -112 -170 -155 C-95 -92 -36 -35 0 10" />
+        <path d="M0 20 C22 -48 90 -112 170 -155 C95 -92 36 -35 0 10" />
+        <path d="M0 20 C-8 80 -45 145 -100 205 C-38 150 -12 85 0 15" />
+        <path d="M0 20 C8 80 45 145 100 205 C38 150 12 85 0 15" />
+        <circle cx="0" cy="20" r="5" fill="#dc143c" stroke="none" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="navbar">
+      <a href="#hero" class="logo"><span>S</span>SHEI4U</a>
+
+      <button id="menuBtn" class="menu-btn" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+
+      <nav id="navLinks" class="nav-links" aria-label="Navigasi utama">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1>Hai, saya Rahmatul <span class="accent">Sasi</span> Maulida</h1>
+        <p>Siswi kelas X RPL B di SMK Negeri 4 Malang. Saya sedang mendalami Rekayasa Perangkat Lunak dan senang membangun tampilan web yang rapi, hangat, serta mudah digunakan.</p>
+
+        <ul class="tags">
+          <li>X RPL B</li>
+          <li>SMK Negeri 4 Malang</li>
+          <li>Web Development</li>
+        </ul>
+
+        <div class="actions">
+          <a href="#portfolio" class="btn">Lihat Portofolio</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <button id="fanBtn" class="fan-btn" type="button" aria-expanded="false" aria-label="Buka foto profil Sasi">
+          <svg class="fan" viewBox="0 0 260 170" role="img" aria-label="Ilustrasi kipas Jepang">
+            <defs>
+              <linearGradient id="fanColor" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff4d4d" stop-opacity="0.9" />
+                <stop offset="55%" stop-color="#dc143c" stop-opacity="0.65" />
+                <stop offset="100%" stop-color="#140607" stop-opacity="0.98" />
+              </linearGradient>
+            </defs>
+            <path d="M130 148 L26 66 A 118 118 0 0 1 234 66 Z" fill="url(#fanColor)" stroke="#dc143c" stroke-width="1.6" />
+            <g stroke="#f3e6d8" stroke-opacity="0.35" stroke-width="1">
+              <line x1="130" y1="148" x2="26" y2="66" />
+              <line x1="130" y1="148" x2="58" y2="37" />
+              <line x1="130" y1="148" x2="94" y2="23" />
+              <line x1="130" y1="148" x2="130" y2="18" />
+              <line x1="130" y1="148" x2="166" y2="23" />
+              <line x1="130" y1="148" x2="202" y2="37" />
+              <line x1="130" y1="148" x2="234" y2="66" />
+            </g>
+            <g stroke="#ff4d4d" stroke-width="1.4" fill="none" opacity="0.85">
+              <path d="M130 104 C110 78 86 64 60 58" />
+              <path d="M130 104 C150 78 174 64 200 58" />
+              <path d="M130 104 C118 74 108 52 96 34" />
+              <path d="M130 104 C142 74 152 52 164 34" />
+            </g>
+            <circle cx="130" cy="148" r="7" fill="#dc143c" stroke="#f3e6d8" stroke-width="1.2" />
+          </svg>
+
+          <span class="photo"><img src="ss.jpeg" alt="Foto Rahmatul Sasi Maulida" /></span>
+          <span class="fan-hint">Klik kipas untuk melihat foto</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>Cerita singkat tentang latar belakang, minat, dan tujuan saya di bidang pengembangan web.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-text card">
+          <h3>Rekayasa Perangkat Lunak dan Web Development</h3>
+          <p>
+            Nama lengkap saya <strong>Rahmatul Sasi Maulida</strong>, biasa dipanggil <strong>Sasi</strong>. Saya siswi kelas <strong>X RPL B</strong> di <strong>SMK Negeri 4 Malang</strong>. Saya mulai tertarik pada pengembangan web sejak belajar menyusun HTML, mempercantik tampilan dengan CSS, dan menghidupkan interaksi memakai Jav.
+          </p>
+          <p>
+            Bagi saya, website yang baik bukan hanya soal tampilan. Website juga harus nyaman dipakai, mudah dibaca, dan konsisten. Karena itu saya senang mempelajari detail kecil seperti kerapian layout, keterbacaan teks, dan struktur kode yang bersih.
+          </p>
+
+          <ul class="points">
+            <li>Fokus pada pengembangan web front end.</li>
+            <li>Terbiasa memakai HTML5, CSS3, JavaScript, dan Python.</li>
+            <li>Bertujuan menjalani PKL sebagai web developer untuk mengasah kemampuan di dunia industri.</li>
+            <li>Aktif berorganisasi dan terbiasa bekerja dalam tim.</li>
+          </ul>
+        </article>
+
+        <aside class="profile card">
+          <div class="avatar">
+            <img src="sss.jpeg" alt="gambarsasi">
+          </div>
+          <h3>Rahmatul Sasi Maulida</h3>
+          <p class="role">Web Developer Learner</p>
+
+          <ul class="profile-info">
+            <li><span>Nama Panggilan</span><b>Sasi</b></li>
+            <li><span>Kelas</span><b>X RPL B</b></li>
+            <li><span>Sekolah</span><b>SMKN 4 Malang</b></li>
+            <li><span>Jurusan</span><b>RPL</b></li>
+            <li><span>Domisili</span><b>Malang</b></li>
+            <li><span>Minat</span><b>Web Development</b></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Kompetensi dan perangkat lunak yang dikuasai.</p>
+      </div>
+
+      <ul class="skills-grid">
+        <li class="skill card"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="Logo HTML5" loading="lazy" /><h3>HTML5</h3></li>
+        <li class="skill card"><img src="css.png" alt="Logo CSS3" loading="lazy" /><h3>CSS3</h3></li>
+        <li class="skill card"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="Logo JavaScript" loading="lazy" /><h3>JavaScript</h3></li>
+        <li class="skill card"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Logo Python" loading="lazy" /><h3>Python</h3></li>
+        <li class="skill card"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Logo Figma" loading="lazy" /><h3>Figma</h3></li>
+        <li class="skill card"><img src="vscode.png" alt="Logo VS Code" loading="lazy" /><h3>VS Code</h3></li>
+      </ul>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portfolio" class="section">
+      <div class="section-head">
+        <h2>Portofolio</h2>
+        <p>Kumpulan proyek web development yang saya kerjakan selama belajar di jurusan RPL.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="media-card card">
+          <img src="portofolio.png" alt="Gambar proyek Personal Profile Web" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Web Development</span>
+            <h3>Personal Profile Web</h3>
+            <p>Halaman profil pribadi satu halaman dengan navigasi internal, layout responsif, dan tema gelap merah yang hangat.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="vigma.png" alt="Gambar proyek Digital Attendance Flowchart" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Desain Figma</span>
+            <h3>Custom Merchandise Catalog Karsa Merch</h3>
+            <p>Katalog produk merchandise custom dengan susunan card grid, informasi harga, dan tampilan yang nyaman di mobile.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="statistik.png" alt="Gambar proyek Karsa Merch Catalog" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Tugas IPAS</span>
+            <h3>Web Statistik</h3>
+            <p>Tugas IPAS Membuat WEB Untuk Statistik data.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <div class="section-head">
+        <h2>Achievements</h2>
+        <p>Catatan prestasi non akademik, kejuaraan, dan pengalaman organisasi.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="media-card card">
+          <img src="inter.jpeg" alt="Gambar kejuaraan pencak silat" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Prestasi</span>
+            <h3>Kejuaraan Pencak Silat</h3>
+            <p>Mengikuti dan meraih prestasi pada kejuaraan pencak silat tingkat sekolah dan kota.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="bdi.jpeg" alt="Gambar pengurus BDI" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Organisasi</span>
+            <h3>Pengurus BDI</h3>
+            <p>Terlibat sebagai pengurus BDI, berlatih koordinasi, menyusun program, dan bertanggung jawab pada tugas tim.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="DPK.jpeg" alt="Gambar pengurus DPK" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Organisasi</span>
+            <h3>Anggota DPK</h3>
+            <p>Berperan aktif dalam kepengurusan DPK, membantu pelaksanaan kegiatan dan administrasi organisasi.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="padsu.png" alt="Gambar paduan suara" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Seni</span>
+            <h3>Paduan Suara</h3>
+            <p>Anggota paduan suara sekolah, melatih kekompakan, ketepatan nada, dan kepercayaan diri saat tampil.</p>
+          </div>
+        </article>
+
+        <article class="media-card card">
+          <img src="sekre.png" alt="Gambar sekretaris event" loading="lazy" />
+          <div class="media-body">
+            <span class="label">Kepanitiaan</span>
+            <h3>Sekretaris Event</h3>
+            <p>Mengelola administrasi, notulen rapat, surat menyurat, dan dokumentasi acara sekolah.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="section">
+      <div class="contact-box">
+        <div class="section-head">
+          <h2>Mari Terhubung</h2>
+          <p>Terbuka untuk diskusi seputar web development, kolaborasi proyek, maupun kesempatan PKL sebagai web developer. Kirim pesan melalui formulir di bawah ini.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-links">
+            <a href="mailto:rahmatulsasi140210@gmail.com">
+              <i>Em</i>
+              <span><small>Email</small>rahmatulsasi140210@gmail.com</span>
+            </a>
+            <a href="https://github.com/rahmatulsasi" target="_blank" rel="noopener noreferrer">
+              <i>Gh</i>
+              <span><small>GitHub</small>github.com/shei4u</span>
+            </a>
+            <a href="https://www.instagram.com/splashmoonlight_?obrf=Z2IxMXJxY2JkOTZm" target="_blank" rel="noopener noreferrer">
+              <i>Ig</i>
+              <span><small>Instagram</small>@splashmoonlight_</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rahmatul-sasi-5a4376415?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+              <i>Li</i>
+              <span><small>Linkind</small>rahmatul sasi</span>
+            </a>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <label>Nama
+                <input name="name" type="text" required autocomplete="name" placeholder="Nama lengkap" />
+              </label>
+              <label>Email
+                <input name="email" type="email" required autocomplete="email" placeholder="nama@email.com" />
+              </label>
+            </div>
+
+            <label>Pesan
+              <textarea name="message" rows="5" required placeholder="Tulis pesan Anda di sini"></textarea>
+            </label>
+
+            <button id="submitBtn" class="btn" type="submit">Kirim Pesan</button>
+            <p id="formStatus" class="form-status" role="status" hidden></p>
+            <p class="form-note">Pesan dikirim ke shei4u.sasi@gmail.com melalui FormSubmit.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>SHEI4U</strong>
+    <p>Portofolio pribadi Rahmatul Sasi Maulida, X RPL B SMK Negeri 4 Malang.</p>
+    <small>Hak cipta <span id="year">2026</span> SHEI4U.</small>
+  </footer>
+
+</body>
+</html>
